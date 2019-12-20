@@ -119,6 +119,13 @@ public class CircleMenu extends FrameLayout implements MenuControllerListener {
         menuController.onDraw(canvas);
     }
 
+    /**
+     * Allows for the user of the menu to retrieve the center menu button.
+     */
+    public CenterMenuButton getCenterButton() {
+        return centerButton;
+    }
+
     @Override
     public void onOpenAnimationStart() {
         centerButton.setClickable(false);
